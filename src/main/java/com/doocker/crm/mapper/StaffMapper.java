@@ -2,6 +2,8 @@ package com.doocker.crm.mapper;
 
 import com.doocker.crm.po.Staff;
 import com.doocker.crm.po.StaffExample;
+
+import java.util.HashMap;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -93,4 +95,6 @@ public interface StaffMapper {
      * @mbggenerated Thu Jul 13 15:41:52 CST 2017
      */
     int updateByPrimaryKey(Staff record);
+    //根据员工名称分页查询员工
+    List<HashMap> selectByPage(@Param("staffName")String staffName);
 }

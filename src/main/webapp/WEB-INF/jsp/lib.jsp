@@ -5,4 +5,8 @@
     <link rel="stylesheet" type="text/css" href="js/themes/icon.css" />
     <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="js/jquery.easyui.min.1.2.2.js"></script>
+    <script type="text/javascript" src="js/locale/easyui-lang-zh_CN.js"></script>
+    
+    
+    
 	

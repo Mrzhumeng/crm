@@ -18,7 +18,14 @@
 	<!-- 匹配根绝访问路径 和@RequestMapping("path")中的path  
 		请求的数据 绑定到 方法的参数中
 	-->
-	<mvc:annotation-driven/>
+	<mvc:annotation-driven conversion-service="conversionServiceFactoryBean"/>
+	<bean id="conversionServiceFactoryBean" class="org.springframework.context.support.ConversionServiceFactoryBean">
+		<property name="converters">
+			<list>
+				<bean class="com.doocker.crm.controller.common.String2DataConverter"/>
+			</list>
+		</property>
+	</bean>
 	
 	<!-- 配置视图解析器， 根据返回的视图名称 找到jsp 并且根据数据和jsp生成网页 -->
 	<bean

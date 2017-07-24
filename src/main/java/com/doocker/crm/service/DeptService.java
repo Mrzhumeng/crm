@@ -9,4 +9,6 @@ public interface DeptService {
 	Integer insertDept(Dept dept);
 	Dept getDept(Integer id);
 	PageInfo<Dept> selectListByPage(String deptName, Integer page, Integer rows);
+	Integer deleteById(Integer id);
+	Integer add(Dept dept);
 }
