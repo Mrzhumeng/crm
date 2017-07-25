@@ -7,16 +7,16 @@
 	<input id="qstaffname" type="text">
 	<input type="button" value="查询" id="querystaff">
 </div>
-
-<!-- 创建easyui表格     --> 
+<!-- 修改了注释 -->
+<!-- 创建easyui表格         --> 
 <table id="dg"></table>
 <div id="addstaff">
 	<label>姓名</label>
 	<input type="text" id="istaffname" ><br>
 	<label>性别</label>
 		<select id="istaffsex">
-			<option value='1'>男<option>
-			<option value='0'>女<option>
+			<option value='1'>男</option>
+			<option value='0'>女</option>
 		</select><br>
 	<label>生日</label>
 	<input id="istaffbirthday" type="text" class="easyui-datebox" ></input> <br>
@@ -198,7 +198,7 @@
 										var ipositionid = $("#iposition").val();
 										$.ajax({
 											url:'staff/update.do',
-											data:{id:row.id,sex:istaffsex,birthday:istaffbirthday,entry:istaffentry,positionId:ipositionid},
+											data:{name:istaffname,id:row.id,sex:istaffsex,birthday:istaffbirthday,entry:istaffentry,positionId:ipositionid},
 											success:function(data){
 												if(data.flag){
 													//重新加载，刷新表格
