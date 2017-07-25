@@ -8,7 +8,7 @@
 	<input type="button" value="查询" id="querystaff">
 </div>
 
-<!-- 创建easyui表格 --> 
+<!-- 创建easyui表格     --> 
 <table id="dg"></table>
 <div id="addstaff">
 	<label>姓名</label>
